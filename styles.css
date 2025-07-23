@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Very light grey */
+            color: #333333; /* Darker text for contrast */
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            max-height: 40vh;
+        }
+        .donut-chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            height: 300px;
+            margin: auto;
+        }
+        .radar-chart-container { /* Renamed to bar-chart-container for consistency, but keeping the old name for now to avoid breaking */
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            height: 400px;
+            margin: auto;
+        }
+        .nav-item {
+            cursor: pointer;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s, color 0.2s;
+            font-weight: 600;
+        }
+        .nav-item.active {
+            background-color: #FF8C00; /* Hubtel Orange */
+            color: #ffffff;
+        }
+        .nav-item:not(.active):hover {
+            background-color: #FFF0E0; /* Lighter Orange */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
